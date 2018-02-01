@@ -5,7 +5,6 @@ public class Car {
 	private String model;
 	private int year;
 	private double price;
-	private String $;
 	
 	public Car() {
 	}
@@ -47,12 +46,11 @@ public class Car {
 		this.model = carModel;
 		this.year = carYear;
 		this.price = carPrice;
-		this.$ = "$";
 	}
 	
 	// formatted the string with the toString method
 	public String toString() {
-		return String.format("%1$-15s %2$-10s %3$-6d %4$-1s %5$-10.2f \n", make, model, year, $, price);
+		return String.format("%1$-15s %2$-10s %3$-6d $%4$-10.2f \n", make, model, year, price);
 	}
 
 }
