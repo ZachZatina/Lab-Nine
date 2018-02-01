@@ -1,6 +1,6 @@
 
 public class Car {
-	
+	// instance variables
 	private String make;
 	private String model;
 	private int year;
@@ -50,6 +50,7 @@ public class Car {
 		this.$ = "$";
 	}
 	
+	// formatted the string with the toString method
 	public String toString() {
 		return String.format("%1$-15s %2$-10s %3$-6d %4$-1s %5$-10.2f \n", make, model, year, $, price);
 	}
